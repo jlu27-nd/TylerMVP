@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a100e">
+  <meta name="description" content="Pack2Pitch. Discover fictional soccer stars, collect rare cards, and build your dream club. Open a free three-card demo pack.">
+  <title>Pack2Pitch | Your next legend is in the pack.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="Pack2Pitch home"><span class="brand-icon" aria-hidden="true">P<span>2</span>P</span><span>PACK<span class="lime">2</span>PITCH</span></a>
+    <nav aria-label="Main navigation"><a href="#how-it-works">The game</a><a href="#collection">The players</a><a href="#rarities">The chase</a></nav>
+    <button class="button button-small" data-open-pack>Open a free pack <span aria-hidden="true">↗</span></button>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> SEASON 01 / THE ORIGINAL 50</div>
+        <h1 id="hero-title">YOUR NEXT<br><span class="lime">LEGEND.</span><br>IN THE PACK.</h1>
+        <p class="hero-description">One pack. Three possibilities. Discover soccer stars, chase the extraordinary, and start building a club that's all yours.</p>
+        <div class="hero-actions"><button class="button" data-open-pack>Open your first pack <span aria-hidden="true">↗</span></button><a class="text-link" href="#collection">Meet the players <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-note"><span class="tiny-ball" aria-hidden="true">✦</span> Free demo. Fictional players. Pure football.</p>
+      </div>
+      <div class="hero-stage" aria-label="Featured Legendary player Cristiano Valera, Portugal, 92 overall">
+        <div class="stadium-ring ring-one"></div><div class="stadium-ring ring-two"></div><div class="pitch-lines"></div>
+        <div class="hero-sidecard sidecard-left" id="hero-epic" aria-hidden="true"></div>
+        <div class="hero-sidecard sidecard-right" id="hero-rare" aria-hidden="true"></div>
+        <img class="hero-card" src="assets/valera-legendary.webp" width="1024" height="1536" alt="Cristiano Valera's gold Legendary card. Portugal striker, 92 overall, performing an airborne volley.">
+        <div class="floating-label"><span class="gold-star">✦</span><span>THE ONE YOU'RE LOOKING FOR<strong>CRISTIANO VALERA <span>92 ST</span></strong></span></div>
+        <span class="stage-caption">EVERY GREAT CLUB STARTS WITH A PULL.</span>
+      </div>
+    </section>
+    <div class="collection-strip" aria-label="Collection overview"><div class="wrap strip-inner"><span><strong>50</strong> ORIGINAL PLAYERS</span><span><strong>4</strong> RARITY TIERS</span><span><strong>1</strong> CLUB. YOURS.</span><span class="strip-end"><span class="status-dot"></span> THE FIRST COLLECTION</span></div></div>
+    <section class="section wrap" id="how-it-works" aria-labelledby="how-title">
+      <div class="section-heading"><div><p class="eyebrow">FROM THE FIRST PULL TO YOUR FIRST XI</p><h2 id="how-title">LUCK OPENS THE PACK.<br><span class="muted">YOU BUILD THE CLUB.</span></h2></div><p class="section-intro">Start with the collection. Make it your own. Here's the game we're building.</p></div>
+      <div class="steps"><article><span class="step-number">01 / DISCOVER</span><div class="step-symbol" aria-hidden="true">✦</div><h3>Feel the reveal.</h3><p>Open a three-card pack. A familiar face, a new favorite, or that gold flash you've been hoping for.</p><span class="feature-status">TRY IT IN THE DEMO</span></article><article><span class="step-number">02 / COLLECT</span><div class="step-symbol" aria-hidden="true">▧</div><h3>Find your favorites.</h3><p>Explore all 50 players. Compare their strengths and collect cards across four rarity tiers.</p><span class="feature-status">EXPLORE THE COLLECTION</span></article><article><span class="step-number">03 / COMPETE</span><div class="step-symbol" aria-hidden="true">⚑</div><h3>Make your XI count.</h3><p>Our next chapter: equip a lineup, enter simulated matches, and earn virtual club coins.</p><span class="feature-status upcoming">COMING IN A FUTURE BUILD</span></article></div>
+    </section>
+    <section class="section rarity-section" id="rarities" aria-labelledby="rarity-title"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">SAME GAME. DIFFERENT FEELING.</p><h2 id="rarity-title">SOME PULLS<br><span class="lime">HIT DIFFERENT.</span></h2></div><div class="section-intro"><p>Four rarities. Every player has a role.</p><p class="small">Demo odds per card. Each of the three cards rolls independently.</p></div></div><div class="rarity-grid" id="rarity-grid"></div></div></section>
+    <section class="section wrap" id="collection" aria-labelledby="collection-title"><div class="section-heading"><div><p class="eyebrow">THE ORIGINAL 50 / PLAYER COLLECTION</p><h2 id="collection-title">MEET YOUR<br><span class="muted">NEXT FAVORITE.</span></h2></div><p class="section-intro">Speedsters. Playmakers. Game changers.<br>Every card has a story waiting to happen.</p></div>
+      <div class="collection-controls"><div class="filter-tabs" role="group" aria-label="Filter players by rarity"><button class="filter active" data-rarity="All" aria-pressed="true">All players</button><button class="filter" data-rarity="Common" aria-pressed="false">Common</button><button class="filter" data-rarity="Rare" aria-pressed="false">Rare</button><button class="filter" data-rarity="Epic" aria-pressed="false">Epic</button><button class="filter" data-rarity="Legendary" aria-pressed="false">Legendary</button></div><label class="search-label"><span class="sr-only">Search by player, country, or position</span><input id="player-search" type="search" placeholder="Search player, country, position…"></label></div>
+      <div class="collection-meta"><p id="result-count" role="status"></p><label class="owned-toggle"><input id="owned-only" type="checkbox"> My demo collection <span id="owned-count">0/50</span></label></div>
+      <div class="player-grid" id="player-grid"></div><p class="empty-state" id="empty-state" hidden>No players found. Try a different search or open a free pack to start your collection.</p><div class="load-more-wrap"><button class="button button-outline" id="load-more">Show more players <span aria-hidden="true">↓</span></button></div>
+    </section>
+    <section class="final-cta wrap"><p class="eyebrow">YOUR CLUB STARTS HERE.</p><h2>THREE CARDS.<br><span class="lime">ANYTHING CAN HAPPEN.</span></h2><button class="button" data-open-pack>Let's open a pack <span aria-hidden="true">↗</span></button><p class="small muted">No account. No payment. Just your first pull.</p></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#">PACK<span class="lime">2</span>PITCH</a><p>An original game concept by Tyler.</p><a href="cards.html">View all 50 cards ↗</a><p class="footer-note">Playable collection prototype. Matches, trading, and club coins are planned features. Demo collections save in this browser when storage is available.</p></footer>
+  <dialog id="pack-dialog" aria-labelledby="pack-title"><div class="dialog-top"><span class="eyebrow">PACK2PITCH / FREE DEMO PACK</span><button class="icon-button" data-close-pack aria-label="Close pack opening">✕</button></div><h2 id="pack-title">YOUR NEXT<br><span class="lime">THREE START HERE.</span></h2><p class="muted" id="pack-instructions">Tap a card to reveal your player.</p><div class="pack-cards" id="pack-cards"></div><p id="pack-announcement" class="sr-only" role="status" aria-live="polite"></p><div class="pack-footer"><button class="button button-outline" id="reveal-all">Reveal all</button><button class="button" id="another-pack">Open another pack ↗</button></div><p class="pack-fineprint">Per card: Common 70% · Rare 24% · Epic 5% · Legendary 1%. Independent rolls; duplicates are possible. No cash value.</p><p class="pack-fineprint" id="storage-notice" hidden>This browser cannot save your collection. Your cards will remain available during this visit.</p></dialog>
+  <dialog id="player-dialog" aria-labelledby="player-detail-title"><div class="dialog-top"><span class="eyebrow">PLAYER PROFILE</span><button class="icon-button" id="close-player" aria-label="Close player profile">✕</button></div><div id="player-detail"></div></dialog>
+</body></html>

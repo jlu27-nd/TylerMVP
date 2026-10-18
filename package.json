@@ -1,0 +1,9 @@
+{
+  "name": "pack2pitch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tyler's fictional soccer card collection and Pack2Pitch hero page.",
+  "scripts": { "test": "node --test tests/*.test.js", "start": "node scripts/serve.js", "build": "node scripts/check.js" },
+  "engines": { "node": ">=20" }
+}
