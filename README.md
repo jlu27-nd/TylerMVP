@@ -2,6 +2,10 @@
 
 Tyler's original soccer card game prototype. A responsive hero page, 50-player card collection, and a free three-card pack-opening demo.
 
+Source: https://github.com/jlu27-nd/TylerMVP
+
+The page introduces Tyler's priorities: suspenseful pack reveals, rare cards, virtual club coins, equipped lineups, a player market, and fresh expansions. The founder section quotes an excerpt from the original written game brief and identifies that source; it does not present the excerpt as a verbatim interview quote from Tyler.
+
 ## Run it
 
 Install Node.js 20 or newer. No dependencies or account setup are needed.
@@ -17,6 +21,7 @@ Open http://localhost:3000. Run `npm test` to check the roster and random draws;
 - `players.json`: a reusable copy of all 50 player records, with nationalities and six position-specific attributes.
 - `players.js`: the same roster used by the website, plus pack odds. Keep both roster copies in sync when editing.
 - `styles.css`: colors, card frames, mobile layouts, and animations.
+- `hero.css`: bright-on-dark hero details, concept feature illustrations, and the section about Tyler's idea.
 - `card-ui.js`: one card template that generates every player card with exact text and stats.
 - `app.js`: pack reveals, filters, player profiles, and browser collection saving.
 - `assets/`: generated original fictional player artwork and the Legendary hero card. Sheets contain equal portrait tiles, in roster order.
